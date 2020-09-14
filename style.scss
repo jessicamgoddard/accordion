@@ -4,8 +4,16 @@
  * CSS for both Frontend+Backend.
  */
 
- .wp-block-pandp-blocks-clear::before {
-   content: '';
-   clear: both;
-   display: table;
- }
+.wp-block-pandp-blocks-accordion {
+ border: 1px solid black;
+ margin: 15px;
+ padding: 15px;
+}
+
+.wp-block-pandp-blocks-accordion > .accordion-panel {
+  display: none;
+}
+
+.wp-block-pandp-blocks-accordion.is-active > .accordion-panel {
+  display: block;
+}

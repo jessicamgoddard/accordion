@@ -118,9 +118,10 @@ registerBlockType( 'pandp-blocks/accordion', {
 
 		return (
 			<div>
-
-        <p className="accordion-heading">{ heading }</p>
-        <div className="accordion-sub-head">{ subHead }</div>
+        <button type="button" aria-expanded="false" class="accordion-trigger">
+          <p className="accordion-heading">{ heading }</p>
+          <div className="accordion-sub-head">{ subHead }</div>
+        </button>
         <div role="region" className="accordion-panel">
           <div class="accordion-content">
             <InnerBlocks.Content />
