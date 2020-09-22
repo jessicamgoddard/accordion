@@ -72,21 +72,25 @@ registerBlockType( 'pandp-blocks/accordion', {
     return(
       <div className={ className }>
 
-        <RichText
-          tagName="p"
-          className="accordion-heading"
-          placeholder={ __( 'Add your heading...' ) }
-          onChange={ heading => { setAttributes( { heading } ) } }
-          value={ heading }
-        />
-        <RichText
-          tagName="div"
-          multiline = "p"
-          className="accordion-sub-head"
-          placeholder={ __( 'Add your sub-head...') }
-          onChange={ subHead => { setAttributes( { subHead } ) } }
-          value={ subHead }
-        />
+        <div class="accordion-trigger">
+
+          <RichText
+            tagName="p"
+            className="accordion-heading"
+            placeholder={ __( 'Add your heading...' ) }
+            onChange={ heading => { setAttributes( { heading } ) } }
+            value={ heading }
+          />
+          <RichText
+            tagName="div"
+            multiline = "p"
+            className="accordion-sub-head"
+            placeholder={ __( 'Add your sub-head...') }
+            onChange={ subHead => { setAttributes( { subHead } ) } }
+            value={ subHead }
+          />
+
+        </div>
 
         <div role="region" className="accordion-panel">
           <InnerBlocks

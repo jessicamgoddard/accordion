@@ -5,13 +5,10 @@
  * which makes it higher in priority.
  */
 
- .wp-block-pandp-blocks-clear  {
-   background: #fbfbfb;
-   color: #e8e8e8;
-   text-align: center;
-   text-transform: uppercase;
- }
+.wp-block-pandp-blocks-accordion {
 
- .wp-block-pandp-blocks-clear p {
-   margin: 0 !important;
- }
+  .accordion-heading {
+    margin-top: 0;
+  }
+
+}
